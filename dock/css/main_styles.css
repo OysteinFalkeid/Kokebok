@@ -1,0 +1,38 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 2%;
+  margin: 2%;
+}
+
+nav {
+  background: #eee;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.recipe-card {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
