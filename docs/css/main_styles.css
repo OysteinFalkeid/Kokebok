@@ -1,11 +1,29 @@
+
+
+:root {
+  --color-background: #f9f9f9;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-primary: #64748b;
+  --color-primary-hover: #475569;
+  --color-border: #e5e7eb;
+  --color-accent: #f59e0b;
+}
+
+
+
 body {
   font-family: 'Times New Roman', Times, serif;
   padding: 2%;
   margin: 2%;
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 nav {
-  background: #eee;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
   padding: 1rem;
   display: flex;
   gap: 1rem;
@@ -23,16 +41,79 @@ main {
   max-width: 800px;
 }
 
+
 button {
+  background: var(--color-primary);
+  color: var(--color-surface);
+  border: 1px solid var(--color-border);
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  border-radius: 6px;
   cursor: pointer;
+}
+
+
+button:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .recipe-card {
   display: block;
   text-decoration: none;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
   padding: 1rem;
-  border: 1px solid #ddd;
   margin-bottom: 1rem;
+}
+
+.recipe-card:hover {
+  border-color: var(--color-primary);
+}
+
+
+h1, h2, h3 {
+  color: var(--color-text);
+}
+
+p, li {
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.amount {
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 0.25rem 0.25rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  min-width: 4rem;
+  text-align: center;
 }
