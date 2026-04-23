@@ -26,28 +26,28 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/images/icons/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
- 
-    <title>404</title>
- 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/main_styles.css" />
-  </head>
-  <body>
- 
-    <!-- Scripts -->
-    <script src="/java_script/main.js" defer></script>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/css/main_styles.css" />
+</head>
+<body>    
+  <!-- Scripts -->
+  <script src="/java_script/main.js" defer></script>
+  <script src="/java_script/servings.js" defer></script>
 
+  {% include nav.html %}
+  <main>
+    <h1>{{ page.title }}</h1>
 
-  <nav>
-    <a href="/index.html"><button>Home</button></a>
-    <a href="/recipes.html"><button>Recipes</button></a>
-  </nav>
-
-    <main>
-        <h1>ERROR 404 page not found</h1>
-    </main>
-
-
-
-  </body>
+    <div id="serving-control">
+      <button onclick="changeServings(-1)">-</button>
+      <span id="serving-count">2</span> portioner
+      <button onclick="changeServings(1)">+</button>
+    </div>
+    
+      <div class="container">
+        <!-- ingredients and steps here -->
+        {{ content }}
+      </div>
+  </main>
+</body>
 </html>
