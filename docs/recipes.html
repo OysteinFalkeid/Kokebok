@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,28 +22,28 @@
     <meta name="twitter:image" content="" />
  
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png" />
-    <link rel="manifest" href="images/icons/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/images/icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/icons/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="{{ site.baseurl }}/images/icons/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
  
     <title>Opskrifter</title>
  
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/main_styles.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main_styles.css" />
   </head>
   <body>
  
     <!-- Scripts -->
-    <script src="java_script/main.js" defer></script>
-    <script src="java_script/search.js" defer></script>
+    <script src="{{ site.baseurl }}/java_script/main.js" defer></script>
+    <script src="{{ site.baseurl }}/java_script/search.js" defer></script>
 
 
     <nav>
-      <a href="index.html"><button>Hjem</button></a>
-      <a href="recipes.html"><button>Opskrifter</button></a>
+      <a href="{{ site.baseurl }}/index.html"><button>Hjem</button></a>
+      <a href="{{ site.baseurl }}/recipes.html"><button>Opskrifter</button></a>
     </nav>
 
     <main>
@@ -50,19 +52,19 @@
       <input type="text" id="search" placeholder="Search recipes..." />
 
       <div class="container" id="recipe-list">
-        <a href="/recipes/potet-og-parmesansuppe-med-soltorkede-tomater.html" class="recipe-card" data-name="potet- og parmesansuppe med soltørkede tomater">
+        <a href="{{ site.baseurl }}/recipes/potet-og-parmesansuppe-med-soltorkede-tomater.html" class="recipe-card" data-name="potet- og parmesansuppe med soltørkede tomater">
           <h3>Potet- og parmesansuppe med soltørkede tomater</h3>
         </a>
 
-        <a href="/recipes/alt-i-ett-gryte-med-ris-og-kylling.html" class="recipe-card" data-name="alt-i-ett gryte med ris og kylling">
+        <a href="{{ site.baseurl }}/recipes/alt-i-ett-gryte-med-ris-og-kylling.html" class="recipe-card" data-name="alt-i-ett gryte med ris og kylling">
           <h3>Alt-i-ett gryte med ris og kylling</h3>
         </a>
 
-        <a href="/recipes/pitabrød-med-kylling-og-salat.html" class="recipe-card" data-name="pitabrød med kylling og salat">
+        <a href="{{ site.baseurl }}/recipes/pitabrød-med-kylling-og-salat.html" class="recipe-card" data-name="pitabrød med kylling og salat">
           <h3>Pitabrød med kylling og salat</h3>
         </a>
 
-        <a href="/recipes/pannekake.html" class="recipe-card" data-name="pannekake">
+        <a href="{{ site.baseurl }}/recipes/pannekake.html" class="recipe-card" data-name="pannekake">
           <h3>Pannekake</h3>
         </a>
       </div>
